@@ -30,8 +30,8 @@ public class CallCenterFacade {
         return cardService.getCardByUser(l);
     }
 
-    public void getSumary(Card card) {
-        reportService.getSumary(card);
+    public void getSummary(Card card) {
+        reportService.getSummary(card);
     }
 
     public void getPaymentInfoByCard(Card card) {
@@ -44,7 +44,7 @@ public class CallCenterFacade {
         List<Register> pendingRegisters = securityService.blockCard(card);
         Card newCard = cardService.createNewCard(123456L, 33445566L);
         registerService.addCardRegisters(newCard, pendingRegisters);
-        reportService.getSumary(newCard);
+        reportService.getSummary(newCard);
     }
 
 }

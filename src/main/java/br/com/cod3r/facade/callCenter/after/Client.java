@@ -13,7 +13,7 @@ public class Client {
         Card card = facade.getCardByUser(123456L);
         System.out.println(card);
 
-        facade.getSumary(card);
+        facade.getSummary(card);
 
         facade.getPaymentInfoByCard(card);
 
