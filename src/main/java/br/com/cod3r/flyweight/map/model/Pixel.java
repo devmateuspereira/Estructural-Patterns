@@ -1,27 +1,30 @@
 package br.com.cod3r.flyweight.map.model;
 
 public class Pixel {
-	private PixelType type;
-	private boolean oppened;
-	
-	public Pixel(PixelType type, boolean oppened) {
-		this.type = type;
-		this.oppened = oppened;
-	}
 
-	public PixelType getType() {
-		return type;
-	}
+    private PixelType type;
 
-	public void setType(PixelType type) {
-		this.type = type;
-	}
+    private boolean opened;
 
-	public boolean isOppened() {
-		return oppened;
-	}
+    public Pixel(PixelType type, boolean opened) {
+        this.type = type;
+        this.opened = opened;
+    }
 
-	public void setOppened(boolean oppened) {
-		this.oppened = oppened;
-	}
+    public PixelType getType() {
+        return type;
+    }
+
+    public void setType(PixelType type) {
+        this.type = type;
+    }
+
+    public boolean isOpened() {
+        return opened;
+    }
+
+    public void setOpened(boolean opened) {
+        this.opened = opened;
+    }
+
 }
